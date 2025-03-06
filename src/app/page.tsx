@@ -30,7 +30,7 @@ export default function Board() {
     ];
 
     for (const [a, b, c] of winningCombinations) {
-      if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
+      if (a && b && c && squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
         return squares[a];
       }
       
